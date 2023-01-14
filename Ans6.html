@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <title>Percentage Table</title>
+</head>
+<body>
+    <script>
+        var subject1 = prompt("Subject 1","Enter subject name");
+var marks1 = +prompt("Marks obtained in "+subject1,"Enter your marks");
+var subject2 = prompt("Subject 2","Enter subject name");
+var marks2 = +prompt("Marks obtained in "+subject2,"Enter your marks");
+var subject3 = prompt("Subject 3","Enter subject name");
+var marks3 = +prompt( "Marks obtained in "+subject3,"Enter your marks");
+
+
+var subjectMarks = 100;
+var subject1Percentage = marks1/subjectMarks*100;
+var subject2Percentage = marks2/subjectMarks*100;
+var subject3Percentage = marks3/subjectMarks*100;
+
+var totalMarks = 300;
+var obtainedMarks = marks1+marks2+marks3;
+var percentage = obtainedMarks/totalMarks*100;
+
+
+
+
+    </script>
+    <table border="3">
+    <thead>
+        <tr>
+            <th>Subjects</th>
+            <th>Total Marks</th>
+            <th>Obtained Marks</th>
+            <th>Percentage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><script>document.write(subject1)</script></td>
+            <td><script>document.write(subjectMarks)</script></td>
+            <td><script>document.write(marks1)</script></td>
+            <td><script>document.write(subject1Percentage)</script></td>
+        </tr>
+        <tr>
+            <td><script>document.write(subject2)</script></td>
+            <td><script>document.write(subjectMarks)</script></td>
+            <td><script>document.write(marks2)</script></td>
+            <td><script>document.write(subject2Percentage)</script></td>
+        </tr>
+        <tr>
+            <td><script>document.write(subject3)</script></td>
+            <td><script>document.write(subjectMarks)</script></td>
+            <td><script>document.write(marks3)</script></td>
+            <td><script>document.write(subject3Percentage)</script></td>
+        </tr>
+        <tr>
+            <th>Total</th>
+            <td><script>document.write(totalMarks)</script></td>
+            <td><script>document.write(obtainedMarks)</script></td>
+            <td><script>document.write(percentage)</script></td>
+        </tr>
+    </tbody>
+</table>
+
+
+</body>
+<!-- <script src="Ans6.js"></script> -->
+</html>
